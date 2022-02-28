@@ -132,7 +132,7 @@
                        </div>
                      </div>
                      <a href=""><button type="submit" name="submit" class="btn btn-primary active">Update</button></a>
-                     <a href="/users.php"><button class="btn btn-info">Employee List</button></a>
+                     <a href="users.php"  class="btn btn-info">Employee List</a>
                     </form>
                 </div>
             </div>

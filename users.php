@@ -150,29 +150,26 @@
               </div>
               <div class="modal-body">
                  <div class="container">
-
-
                        <!-- ADD EMPLOYEE PHP CODE -->
+                     <?php  
 
-     <?php  
+                    if ($_SERVER['REQUEST_METHOD']=='POST') {
+                      //print_r($_POST)
+                      include('include/db_config.php');
+                      extract($_POST);
+                      $sql = "INSERT INTO empinfo(firstname, lastname, gender, phone,email,address, department, degree) VALUES('$fname', '$lname', '$gender','$phone', '$email','$addr', '$dept', '$deg')";
 
-    if ($_SERVER['REQUEST_METHOD']=='POST') {
-      //print_r($_POST)
-      include('include/db_config.php');
-      extract($_POST);
-      $sql = "INSERT INTO empinfo(firstname, lastname, gender, phone,email,address, department, degree) VALUES('$fname', '$lname', '$gender','$phone', '$email','$addr', '$dept', '$deg')";
+                      $conn->query($sql);
 
-      $conn->query($sql);
+                      if($conn->affected_rows>0){ 
 
-      //echo $conn->affected_rows; //Data gese kina check korar jonno
-    }
-
-
-  ?>
-
-
+                        header("Location: http://localhost/waliul-1267894/php_projects/employee-management-system/users.php"); 
                   
-                 <form action="" method="post">
+                      }
+                      //echo $conn->affected_rows; //Data gese kina check korar jonno
+                    }
+                  ?>                  
+                    <form action="" method="post">
                      <div class="form-row">
                          <div class="form-group col-md-6">
                            <label>First Name</label>
@@ -204,7 +201,7 @@
                          <label>Phone</label>
                          <input type="text" class="form-control" placeholder="Enter your phone" value="" name="phone">
                        </div>
-                     </div>
+                      </div>
                      <div class="form-row">
                        <div class="form-group col-xs-6">
                          <label>Email</label>
@@ -245,7 +242,7 @@
 
   </div>
 
-  <!-- /.content-wrapper -->
+.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.18
