@@ -32,7 +32,7 @@
             <div class="box-header">
               <!-- <h3 class="box-title">Hover Data Table</h3> -->
             </div>
-<<<<<<< HEAD
+
                <!-- ADD EMPLOYEE PHP CODE -->
             <?php 
             if ($_SERVER['REQUEST_METHOD']=='POST') {
@@ -45,7 +45,7 @@
 
               if($conn->affected_rows>0){  ?> 
                   <script>
-                    alert("Successfully Added Information")
+                    alert("Successfully Added Information");
                   </script>           
               <?php 
             }
@@ -56,8 +56,6 @@
               //echo $conn->affected_rows; //Data gese kina check korar jonno
             }
           ?> 
-=======
->>>>>>> 8d75c6d562d9af8af676f0baecb060e8035f5bd5
 
             <!-- /.box-header -->
             <div class="box-body">

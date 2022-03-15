@@ -33,7 +33,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="users.php"><i class="fa fa-circle-o"></i> Employee List </a></li>
+            <li class="active"><a href="employee.php"><i class="fa fa-circle-o"></i> Employee List </a></li>
             <li><a href="add_employee.php"><i class="fa fa-circle-o"></i> Add Employee </a></li>
           </ul>
         </li>
