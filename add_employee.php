@@ -65,8 +65,6 @@
                        <label>First Name*</label>
                        <input type="text" class="form-control" placeholder="Enter first name" value="" name="fname">
                      </div>
-
-
                      <div class="form-group col-md-6">
                        <label>Last Name*</label>
                        <input type="text" class="form-control" placeholder="Enter last name" value="" name="lname">

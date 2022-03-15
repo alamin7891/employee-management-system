@@ -140,7 +140,7 @@
 
                       if($conn->affected_rows>0){ 
 
-                        header("Location: http://localhost/waliul-1267894/php_projects/employee-management-system/users.php"); 
+                        header("Location: http://localhost/waliul-1267894/php_projects/employee-management-system/employee.php"); 
                   
                       }
                       //echo $conn->affected_rows; //Data gese kina check korar jonno
