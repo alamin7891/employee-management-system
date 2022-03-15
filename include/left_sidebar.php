@@ -37,6 +37,30 @@
             <li><a href="add_employee.php"><i class="fa fa-circle-o"></i> Add Employee </a></li>
           </ul>
         </li>
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Payroll Management</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="department.php"><i class="fa fa-circle-o"></i> Department List </a></li>
+            <li><a href="add_department.php"><i class="fa fa-circle-o"></i> Add Department </a></li>
+          </ul>
+        </li>
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Leave Management</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="department.php"><i class="fa fa-circle-o"></i> Employee Leave List </a></li>
+            <li><a href="emp_leave.php"><i class="fa fa-circle-o"></i> Add Leave </a></li>
+          </ul>
+        </li>
         <li class="header">LABELS</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
