@@ -105,7 +105,6 @@
     </section>
     <!-- /.content -->   
 
-
     <section class="content">
       <div class="row">
         <div class="col-xs-12">
@@ -215,11 +214,7 @@
         <!-- /.modal -->
     </section>
 
-<!--     <a href="emp_reg_form.php"><input type="button" name="btn" value="Add Employee" class="btn btn-primary btn-block btn-lg"></a>
-
-  </div>
-
-.content-wrapper -->
+<!-- .content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.18

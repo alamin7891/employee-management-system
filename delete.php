@@ -8,7 +8,7 @@
 
 	$conn->query($sql);
 	if($conn->affected_rows>0){
-		header("Location: users.php");
+		header("Location: employee.php");
 	}
 
 
