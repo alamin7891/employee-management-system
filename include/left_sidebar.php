@@ -27,7 +27,7 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Employees</span>
+            <i class="fa fa-users"></i> <span>Employees</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -37,9 +37,9 @@
             <li><a href="add_employee.php"><i class="fa fa-circle-o"></i> Add Employee </a></li>
           </ul>
         </li>
-        <li class="active treeview">
+        <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Payroll Management</span>
+            <i class="fa fa-money"></i> <span>Payroll Management</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -49,9 +49,9 @@
             <li><a href="add_department.php"><i class="fa fa-circle-o"></i> Add Department </a></li>
           </ul>
         </li>
-        <li class="active treeview">
+        <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Leave Management</span>
+            <i class="fa fa-user-plus"></i> <span>Leave Management</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
