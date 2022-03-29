@@ -88,7 +88,7 @@
                                         <div class="form-group row">
                                             <label for="start_date" class="col-sm-4 control-label">Start Date</label>
                                             <div class="col-sm-8">
-                                                <input type="text" name="start_date" class="form-control">
+                                                <input type="date" name="start_date" class="form-control">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -115,7 +115,7 @@
                                         <div class="form-group row">
                                             <label for="end_date" class="col-sm-4 control-label">End Date</label>
                                             <div class="col-sm-8">
-                                                <input type="text" name="end_date" class="form-control">
+                                                <input type="date" name="end_date" class="form-control">
                                             </div>
                                         </div>
                                         <div class="form-group row">
