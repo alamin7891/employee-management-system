@@ -39,7 +39,7 @@
               //print_r($_POST)
               include('include/db_config.php');
               extract($_POST);
-              $sql = "INSERT INTO empinfo(firstname, lastname, gender, phone,email,address, department, degree) VALUES('$fname', '$lname', '$gender','$phone', '$email','$addr', '$dept', '$deg')";
+              $sql = "INSERT INTO empinfo(employee_id, firstname, lastname, gender, phone, email, address, department_code, department, designation, salary, degree) VALUES('$employee_id', '$fname', '$lname', '$gender','$phone', '$email','$addr', '$department_code', '$department', '$designation', '$salary', '$deg')";
 
               $conn->query($sql);
 
@@ -49,11 +49,23 @@
                   echo '<h4 class="alert alert-warning text-center w-50" role="alert">Something went wrong!</h4>';
               }
             }
-          ?> 
+          ?>
+
+          <?php
+              include('include/db_config.php');
+              $sql = "SELECT * FROM department";
+              $data = $conn->query($sql);
+          ?>
 
             <!-- /.box-header -->
             <div class="box-body">
                <form action="" method="post">
+               <div class="form-row">
+                     <div class="form-group offset-md-6 col-md-12">
+                       <label>Employee ID</label>
+                       <input type="text" class="form-control" name="employee_id" style="width: 48.5%">
+                     </div>
+                 </div>
                  <div class="form-row">
                      <div class="form-group col-md-6">
                        <label>First Name*</label>
@@ -76,12 +88,33 @@
                  </div>
                  <div class="form-row">
                    <div class="form-group col-md-6">
-                     <label>Department*</label>
-                     <input type="text" class="form-control" placeholder="Enter your Department" value="" name="dept">
+                     <label for="department">Department*</label>
+                     <select name="department" class="form-control">
+                        <option value="">Please Select One</option>
+                        <?php
+                            while($row = $data->fetch_object()){
+                        ?>
+                        <option value="<?php echo $row->department_code;?>"><?php echo $row->department_name; ?></option>
+                        <?php
+                          }
+                        ?>
+                    </select>
+                    <input type="hidden" name="department_code">
                    </div>
                    <div class="form-group col-md-6">
                      <label>Degree</label>
                      <input type="text" class="form-control" placeholder="Enter your Degree" value="" name="deg">
+                   </div>
+                 </div>
+
+                 <div class="form-row">
+                   <div class="form-group col-xs-6">
+                     <label for="designation">Designation</label>
+                     <input type="text" class="form-control" name="designation">
+                   </div>
+                   <div class="form-group col-xs-6">
+                     <label>Salary</label>
+                     <input type="number" class="form-control" name="salary">
                    </div>
                  </div>
 

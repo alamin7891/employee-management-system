@@ -1,0 +1,22 @@
+[
+	{
+		"abbr": "CL",
+		"name": "Casual Leave"
+	},
+	{
+		"abbr": "SL",
+		"name": "Sick Leave"
+	},
+	{
+		"abbr": "ML",
+		"name": "Maternity Leave"
+	},
+	{
+		"abbr": "AL",
+		"name": "Annual Leave"
+	},
+	{
+		"abbr": "LWP",
+		"name": "Loss Of Pay Leave"
+	}
+]
