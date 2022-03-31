@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Generation Time: Mar 31, 2022 at 12:38 AM
+=======
+-- Generation Time: Mar 29, 2022 at 08:43 AM
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -91,8 +95,12 @@ CREATE TABLE `empinfo` (
 --
 
 INSERT INTO `empinfo` (`id`, `employee_id`, `firstname`, `lastname`, `email`, `gender`, `department_code`, `department`, `designation`, `salary`, `degree`, `phone`, `address`) VALUES
+<<<<<<< HEAD
 (1, 'emp002', 'Alamin', 'Hossain', 'alamin@gmail.com', 'Male', 'acc0001', 'Accounts', 'accounts', 25000, 'register', '01612168726', 'jatrabari, Dhaka'),
 (3, 'emp004', 'Shanto', 'Shikdar', 'shanto@gmail.com', 'Male', '', 'P0001', 'Incharge', 20000, '', '015454852', 'Mirpur, Dhaka');
+=======
+(1, 'emp002', 'Alamin', 'Hossain', 'alamin@gmail.com', 'Male', 'acc0001', 'Accounts', 'accounts', 25000, 'register', '01612168726', 'jatrabari, Dhaka');
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
 
 -- --------------------------------------------------------
 
@@ -164,6 +172,44 @@ INSERT INTO `salary_slip` (`id`, `employee_id`, `employee_name`, `department_cod
 (3, '', 'emp002', '', 'Human Resource', 'accounts', 'February', 0, '750', '1800', 200, 2500, 500, 0, 0, 0),
 (4, 'emp002', 'Alamin Hossain', '\r\nacc0001', 'Accounts', 'accounts', '', 25000, '56', '656', 656, 45, 54, 1368, 99, 26269);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `salary_slip`
+--
+
+CREATE TABLE `salary_slip` (
+  `id` int(11) NOT NULL,
+  `employee_id` varchar(50) NOT NULL,
+  `employee_name` varchar(50) NOT NULL,
+  `department_code` varchar(50) NOT NULL,
+  `department_name` varchar(50) NOT NULL,
+  `designation` varchar(50) NOT NULL,
+  `month` varchar(15) NOT NULL,
+  `basic_salary` int(11) NOT NULL,
+  `festival` varchar(50) NOT NULL,
+  `meal_allowance` varchar(15) NOT NULL,
+  `bonus` int(11) NOT NULL,
+  `loan` int(11) NOT NULL,
+  `house_rent` int(11) NOT NULL,
+  `total_allowances` int(11) NOT NULL,
+  `total_deduction` int(11) NOT NULL,
+  `net_salary` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `salary_slip`
+--
+
+INSERT INTO `salary_slip` (`id`, `employee_id`, `employee_name`, `department_code`, `department_name`, `designation`, `month`, `basic_salary`, `festival`, `meal_allowance`, `bonus`, `loan`, `house_rent`, `total_allowances`, `total_deduction`, `net_salary`) VALUES
+(1, '', '1', '', 'Finance', '', 'February', 0, '', '', 0, 0, 0, 0, 0, 0),
+(2, '', '1', '', 'Finance', '', 'February', 0, '', '', 0, 0, 0, 0, 0, 0),
+(3, '', 'emp002', '', 'Human Resource', 'accounts', 'February', 0, '750', '1800', 200, 2500, 500, 0, 0, 0),
+(4, '', 'emp002', '\r\nacc0001', 'Accounts', 'accounts', '', 25000, '750', '', 0, 0, 0, 0, 0, 0),
+(5, '', '', '', '', '', '', 0, '', '', 0, 0, 0, 0, 0, 0),
+(6, '', '', '', '', '', '', 0, '', '', 0, 0, 0, 0, 0, 0),
+(7, '', 'emp002', '\r\nacc0001', 'Accounts', 'accounts', '', 25000, '100', '122', 110, 250, 120, 332, 370, 24962);
+
 --
 -- Indexes for dumped tables
 --
@@ -219,19 +265,31 @@ ALTER TABLE `department`
 -- AUTO_INCREMENT for table `empinfo`
 --
 ALTER TABLE `empinfo`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
 
 --
 -- AUTO_INCREMENT for table `emp_leave`
 --
 ALTER TABLE `emp_leave`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
 
 --
 -- AUTO_INCREMENT for table `salary_slip`
 --
 ALTER TABLE `salary_slip`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

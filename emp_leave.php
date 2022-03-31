@@ -89,7 +89,11 @@
                                         <div class="form-group row">
                                             <label for="start_date" class="col-sm-4 control-label">Start Date</label>
                                             <div class="col-sm-8">
+<<<<<<< HEAD
                                                 <input type="text" name="start_date" id="startDate" class="form-control">
+=======
+                                                <input type="date" name="start_date" class="form-control">
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -117,7 +121,11 @@
                                         <div class="form-group row">
                                             <label for="end_date" class="col-sm-4 control-label">End Date</label>
                                             <div class="col-sm-8">
+<<<<<<< HEAD
                                                 <input type="text" name="end_date" id="endDate" class="form-control">
+=======
+                                                <input type="date" name="end_date" class="form-control">
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
                                             </div>
                                         </div>
                                         <div class="form-group row">

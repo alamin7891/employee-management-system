@@ -1,4 +1,7 @@
+<<<<<<< HEAD
  
+=======
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
 <html>
 <head>
     <?php include('include/link.php'); ?>
@@ -76,7 +79,11 @@
                                         <div class="form-group row">
                                             <label for="employee_name" class="col-sm-4 control-label">Employee Name</label>
                                             <div class="col-sm-8">
+<<<<<<< HEAD
                                                 <select name="employee_code" class="form-control" id="employee_code">
+=======
+                                                <select name="employee_name" class="form-control" id="emp_name">
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
                                                     <option value="">Please Select One</option>
                                                     <?php
                                                         while($row = $data->fetch_object()){
@@ -86,7 +93,11 @@
                                                         }
                                                     ?>
                                                 </select>
+<<<<<<< HEAD
                                                 <input type="hidden" name="employee_name">
+=======
+                                                <input type="hidden" name="employee_code">
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -197,7 +208,13 @@
 <script>
                                 
     $(document).ready(function(){
+<<<<<<< HEAD
         $("#employee_code").on("change", function(){
+=======
+
+        $(".district").hide();
+        $("#emp_name").on("change", function(){
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
             $.ajax({
                 type:'post',
                 url:'getEmpInfo.php',
@@ -209,7 +226,10 @@
                     $("#designation").val(data[2]);
                     $("#basic_salary").val(data[3]);
                     var basic_salary = $("#basic_salary").val();
+<<<<<<< HEAD
                     alert(basic_salary);
+=======
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
                     $("#cal_basic_salary").val(basic_salary);
                     calculate();
                 }
@@ -258,12 +278,17 @@
             let net_salary = 0;
 
             basicSalary = parseFloat($("#cal-table").find("#basic_salary").val());
+<<<<<<< HEAD
+=======
+            alert(basicSalary)
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
             total_allowance = parseFloat($(".net-salary-table").find("#total_allowances").val());
             total_deduction = parseFloat($(".net-salary-table").find("#total_deduction").val());
             net_salary = parseFloat(basicSalary + total_allowance - total_deduction);
             $('#net_salary').val(net_salary);
         }
 
+<<<<<<< HEAD
         $("#employee_code").on("click", function(){
 			$("input[name = 'employee_name']").val($("#employee_code option:selected").text());
 		});
@@ -271,3 +296,10 @@
     });
 </script>
 </html>
+=======
+
+    });
+</script>
+</html>
+
+>>>>>>> db3485be30a96784a8b411d37c21b8ec1c521ed0
